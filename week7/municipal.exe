@@ -1,0 +1,42 @@
+#include <stdio.h> 
+float calculateVAT(float amount); 
+float calculateSalary(float basic, float housing, float transport); 
+ 
+float calculateBudget(float revenue, float expenses); 
+void displayMenu(); 
+ 
+int main() 
+{ 
+    int choice; 
+ 
+    do 
+    { 
+        displayMenu(); 
+        scanf("%d", &choice); 
+ 
+        switch(choice) 
+        { 
+            case 1: 
+                // VAT 
+                break; 
+ 
+            case 2: 
+                // Salary 
+                break; 
+ 
+            case 3: 
+                // Budget 
+                break; 
+ 
+            case 4: 
+                printf("Goodbye.\n"); 
+                break; 
+ 
+            default: 
+                printf("Invalid choice.\n"); 
+        } 
+ 
+    } while(choice != 4); 
+ 
+    return 0; 
+}
