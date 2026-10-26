@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main(void) 
+{ 
+FILE *fp = fopen("employees.txt", "r"); 
+int id; 
+char name[50]; 
+double salary; 
+if (fp == NULL) { 
+perror("employees.txt"); 
+return 1; 
+}
